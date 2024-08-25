@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Product Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Product Name</h1>
+    </header>
+
+    <main>
+        <!-- Product Details Section -->
+        <section id="product-details">
+            <div id="image-gallery">
+                <img id="main-image" src="assets/images/product1.jpg" alt="Product Image">
+                <div class="thumbnails">
+                    <img src="assets/images/product1_thumb.jpg" alt="Thumbnail 1">
+                    <img src="assets/images/product2_thumb.jpg" alt="Thumbnail 2">
+                </div>
+            </div>
+            <div id="product-info">
+                <h2 id="product-title">Loading...</h2>
+                <p id="product-price">Loading...</p>
+                <p id="stock-status">Loading...</p>
+                <input type="number" id="quantity" value="1" min="1">
+                <button id="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+
+        <!-- Customer Reviews Section -->
+        <section id="reviews">
+            <h2>Customer Reviews</h2>
+            <div id="review-list">
+                <!-- Reviews will be dynamically loaded here -->
+            </div>
+            <button id="load-more-reviews">Load More Reviews</button>
+        </section>
+
+        <!-- Related Products Carousel -->
+        <section id="related-products">
+            <h2>Related Products</h2>
+            <div id="related-products-carousel">
+                <!-- Related products will be dynamically loaded here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 My E-commerce Site</p>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
